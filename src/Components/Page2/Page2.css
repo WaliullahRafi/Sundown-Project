@@ -1,0 +1,105 @@
+.page2 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #EFEAE3;
+}
+
+.moving-text {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.moving-text::-webkit-scrollbar {
+  display: none;
+}
+
+.con {
+  white-space: nowrap;
+  display: inline-block;
+  padding: 8vh 0;
+  animation-name: marquee;
+  animation-duration: 13s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.moving-text h1 {
+  font-size: 10vw;
+  display: inline-block;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #fe4e14;
+  display: inline-block;
+  margin: 1.7vw 2.5vw;
+}
+
+.page2-bottom {
+  width: 100%;
+  min-height: 60vh;
+  padding: 0 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 99;
+}
+
+.page2-bottom h2 {
+  font-size: 3.7vw;
+  max-width: 48vw;
+  font-weight: 500;
+}
+
+.bottom-img {
+  width: 30%;
+  margin-top: 20vw;
+}
+
+.bottom-img img {
+  border-radius: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.bottom-img p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.circleAnimate {
+  width: 20vw;
+  height: 20vw;
+  background: linear-gradient(to top right, #fe4e14, #fc5821f0);
+  border-radius: 50%;
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  filter: blur(1.5rem);
+  animation-name: anime1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes anime1 {
+  from {
+    transform: translate(10%, -10%) skew(0);
+  }
+  to {
+    transform: translate(-10%, 10%) skew(-12deg);
+  }
+}

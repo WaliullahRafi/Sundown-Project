@@ -1,0 +1,54 @@
+.page4 {
+  position: relative;
+  width: 100%;
+  min-height: 70vh;
+  background: #efeae3;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  padding: 3vw 3vw;
+  gap: 1rem;
+}
+
+.title .dot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #fc5822;
+}
+
+.title h4 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.swiperContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vw 6vw;
+  gap: 2vw;
+  position: relative;
+  z-index: 999;
+}
+
+.swiperContainer .bottomSwiper {
+  max-width: 30vw;
+  padding: 0 2rem;
+  border-left: 1px solid rgba(50, 50, 50, 0.643);
+}
+
+.swiperContainer .bottomSwiper p {
+  font-weight: 300;
+}
+
+.img-size {
+  width: 10vw;
+  height: 6vw;
+}
+
+.img-size img {
+  width: 100%;
+}
