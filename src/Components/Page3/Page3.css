@@ -125,7 +125,6 @@
 #fixed-image {
   width: 22vw;
   height: 28vw;
-  background: red;
   border-radius: 1rem;
   position: fixed;
   z-index: 999;

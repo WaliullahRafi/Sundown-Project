@@ -1,5 +1,6 @@
 import React from "react";
 import "./Page1.css";
+import Video from "../../assets/video.mp4";
 
 function Home() {
   return (
@@ -45,12 +46,7 @@ function Home() {
         <div className="hero3"></div>
       </div>
 
-      <video
-        autoPlay
-        muted
-        loop
-        src="https://download-video.akamaized.net/v3-1/playback/ea709ea7-d205-45c7-9919-b6484f30fa24/b7e94ef4?__token__=st=1720204252~exp=1720218652~acl=%2Fv3-1%2Fplayback%2Fea709ea7-d205-45c7-9919-b6484f30fa24%2Fb7e94ef4%2A~hmac=3547b68f903eb16d81a037e4435bd9dfaaff317b0c01c30b3b6aa1ba45c0b6a1&r=dXMtZWFzdDE%3D"
-      ></video>
+      <video autoPlay muted loop src={Video}></video>
     </section>
   );
 }
