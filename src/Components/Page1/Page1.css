@@ -54,6 +54,10 @@ nav {
   position: relative;
 }
 
+nav .menu {
+  display: none;
+}
+
 .nav-part2 h4:hover a {
   color: white;
 }
@@ -155,4 +159,38 @@ nav {
   margin-top: 2rem;
   border-radius: 50px;
   position: relative;
+}
+
+.full-screen {
+  width: 100%;
+  height: 100vh;
+  background: rgba(59, 59, 59, 0.501);
+  position: fixed;
+  z-index: 99;
+  top: -100%;
+  transition: all ease 0.8s;
+}
+
+/* ==================== Responsive part ==================== */
+
+@media (max-width: 998px) {
+  nav {
+    width: 100%;
+    height: 8rem;
+  }
+
+  nav .logo {
+    width: 18vw;
+  }
+
+  .nav-part2 {
+    display: none;
+  }
+
+  .center {
+    height: auto;
+  }
+}
+
+@media (max-width: 668px) {
 }

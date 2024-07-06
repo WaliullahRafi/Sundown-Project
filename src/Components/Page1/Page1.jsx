@@ -6,6 +6,7 @@ function Home() {
     <section className="page1">
       <nav>
         <img
+          className="logo"
           src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c2_Sundown%20logo.svg"
           alt="logo"
         />
